@@ -1,0 +1,17 @@
+# GoodNews articles with Llama-3-8B-Instruct as the in-domain generator.
+root: ${oc.env:HERO_DATA_ROOT,data}
+train_files:
+  - goodnews/train/Meta-Llama-3-8B-Instruct.jsonl
+
+# Fraction of source articles held out for validation (8K/2K in the paper).
+val_fraction: 0.2
+# Randomly keep at most this many training samples per class (null = all).
+max_train_per_class: null
+num_workers: 0
+
+# Length cropping (Sec. 3.1.2): with probability p, a training document is cropped
+# to a length drawn from `lengths` that is shorter than the specialist's max_length.
+crop:
+  p: 0.2
+  lengths: [64, 128, 256, 512]
+  position: start  # start | random

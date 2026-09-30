@@ -1,0 +1,13 @@
+# @package _global_
+# Fine-tuned DistilBERT: no Subcategory Guidance, no length cropping, 512 tokens.
+defaults:
+  - override /model: distilbert
+experiment_name: baseline_distilbert
+max_length: 512
+loss:
+  weight: 0.0
+data:
+  crop:
+    p: 0.0
+trainer:
+  batch_size: 1

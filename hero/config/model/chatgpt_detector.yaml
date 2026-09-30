@@ -1,0 +1,3 @@
+# ChatGPT-D baseline.
+backbone: Hello-SimpleAI/chatgpt-detector-roberta
+cache_dir: null

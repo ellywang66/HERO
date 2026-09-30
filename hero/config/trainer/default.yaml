@@ -1,0 +1,9 @@
+device: auto
+num_epochs: 3
+batch_size: 3
+eval_batch_size: 32
+lr: 1.0e-5
+# Halve the learning rate whenever validation mAP stops improving.
+lr_decay_factor: 0.5
+lr_patience: 0
+log_interval: 100

@@ -1,0 +1,13 @@
+# @package _global_
+# openai_d_large baseline fine-tuned on the fine-grained categories (512 tokens, no guidance).
+defaults:
+  - override /model: openai_detector_large
+experiment_name: baseline_openai_d_large
+max_length: 512
+loss:
+  weight: 0.0
+data:
+  crop:
+    p: 0.0
+trainer:
+  batch_size: 1

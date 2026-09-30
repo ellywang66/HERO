@@ -1,0 +1,3 @@
+# Backbone of the LLM-DetectAIve baseline.
+backbone: microsoft/deberta-base
+cache_dir: null

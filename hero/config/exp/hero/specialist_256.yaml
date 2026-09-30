@@ -1,0 +1,4 @@
+# @package _global_
+# HERO length specialist for documents of up to 256 tokens.
+experiment_name: hero_specialist_256
+max_length: 256

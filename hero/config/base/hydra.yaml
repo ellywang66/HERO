@@ -1,0 +1,8 @@
+# @package hydra
+run:
+  dir: ${experiment_dir}
+sweep:
+  dir: ${base_dir}/multirun-${timestamp}
+  subdir: ${hydra.job.num}
+job:
+  chdir: false

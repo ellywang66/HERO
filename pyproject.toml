@@ -1,0 +1,39 @@
+# Root pyproject.toml — tooling configuration only.
+# To install the package, use:
+#   pip install -e hero/          (or hero[dev])
+
+[tool.black]
+line-length = 100
+include = '\.pyi?$'
+exclude = '''
+(
+      __pycache__
+    | \.git
+    | \.pytest_cache
+    | \.venv
+    | logs
+    | outputs
+)
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 100
+known_first_party = ["hero"]
+
+[tool.ruff]
+line-length = 115
+target-version = "py310"
+exclude = ["logs", "outputs"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["hero"]
+
+[tool.pytest.ini_options]
+testpaths = ["hero/tests"]

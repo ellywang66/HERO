@@ -1,0 +1,3 @@
+# OpenAI-D (large) baseline.
+backbone: openai-community/roberta-large-openai-detector
+cache_dir: null

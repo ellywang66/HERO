@@ -1,0 +1,5 @@
+# L_total = L_CE + weight * (L_GH + L_Trans)   (Eq. 1)
+weight: 0.01
+groups:
+  generated_humanized: [generated, humanized]
+  translated: [translated_zh, translated_fr, translated_es, translated_ru]

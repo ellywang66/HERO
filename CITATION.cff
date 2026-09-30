@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: "Real, Fake, or Manipulated? Detecting Machine-Influenced Text"
+authors:
+  - family-names: Wang
+    given-names: Yitong
+  - family-names: Zhang
+    given-names: Zhongping
+  - family-names: Piana
+    given-names: Margherita
+  - family-names: Zhou
+    given-names: Zheng
+  - family-names: Gerstoft
+    given-names: Peter
+  - family-names: Plummer
+    given-names: Bryan A.
+url: "https://github.com/ellywang66/HERO"
+preferred-citation:
+  type: conference-paper
+  title: "Real, Fake, or Manipulated? Detecting Machine-Influenced Text"
+  authors:
+    - family-names: Wang
+      given-names: Yitong
+    - family-names: Zhang
+      given-names: Zhongping
+    - family-names: Piana
+      given-names: Margherita
+    - family-names: Zhou
+      given-names: Zheng
+    - family-names: Gerstoft
+      given-names: Peter
+    - family-names: Plummer
+      given-names: Bryan A.
+  collection-title: "Findings of the Association for Computational Linguistics: EMNLP 2025"
+  year: 2025
+  identifiers:
+    - type: other
+      value: "arXiv:2509.15350"

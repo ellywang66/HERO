@@ -1,0 +1,13 @@
+# @package _global_
+# chatgpt_d baseline fine-tuned on the fine-grained categories (512 tokens, no guidance).
+defaults:
+  - override /model: chatgpt_detector
+experiment_name: baseline_chatgpt_d
+max_length: 512
+loss:
+  weight: 0.0
+data:
+  crop:
+    p: 0.0
+trainer:
+  batch_size: 1

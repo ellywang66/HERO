@@ -1,0 +1,30 @@
+defaults:
+  - _self_
+  - base/hydra
+  - data: goodnews_llama3
+  - model: distilbert
+  - loss: subcategory_guidance
+  - trainer: default
+
+seed: 0
+
+# Maximum number of tokens seen by the detector. Each HERO length specialist
+# uses a different value (128, 256, 512); see config/exp/hero/.
+max_length: 512
+
+# Label order. Removing translated_* classes trains on a subset of languages.
+classes:
+  - human
+  - generated
+  - paraphrased
+  - translated_zh
+  - humanized
+  - translated_fr
+  - translated_es
+  - translated_ru
+
+### Naming and dir structure
+experiment_name: hero_specialist_${max_length}
+base_dir: logs
+timestamp: ${now:%Y%m%d_%H%M%S}
+experiment_dir: ${base_dir}/${experiment_name}-${timestamp}
