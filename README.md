@@ -3,6 +3,10 @@
 Code for **Real, Fake, or Manipulated? Detecting Machine-Influenced Text** (Findings of EMNLP 2025) —
 [arXiv:2509.15350](https://arxiv.org/abs/2509.15350).
 
+<p align="center">
+  <img src="media/fg_mgt_task.png" alt="Fine-grained machine-influenced text detection: human-written, generated, paraphrased, humanized and machine-translated documents" width="720">
+</p>
+
 HERO (HiErarchical, length-RObust machine-influenced text detector) classifies a document into eight
 fine-grained categories: human-written, machine-generated, machine-paraphrased, machine-humanized, and
 machine-translated from Chinese, French, Spanish or Russian. It combines:
@@ -37,6 +41,7 @@ HERO/
 │   ├── utils/                  # seeding, metrics
 │   ├── scripts/                # launch scripts
 │   └── tests/
+├── media/                      # figures
 ├── install_scripts/
 ├── check_environment.py
 └── pyproject.toml              # tooling configuration (black / isort / ruff)
